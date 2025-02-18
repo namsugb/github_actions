@@ -34,4 +34,4 @@ jobs:
 
       - name: Run Tests
         run: |
-          python manage.py test
+          github_actions/python manage.py test
