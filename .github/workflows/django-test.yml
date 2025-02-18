@@ -33,5 +33,6 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
       - name: Run Tests
-        run: |
-          github_actions/python manage.py test
+        working-directory: github_actions
+        run: python manage.py test
+
