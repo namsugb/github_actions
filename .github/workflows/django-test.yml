@@ -1,4 +1,4 @@
-name: Python package
+name: Django test
 
 on: [push]
 
@@ -9,6 +9,7 @@ jobs:
     strategy:
       matrix:
         python-version: ["pypy3.10", "3.9", "3.10", "3.11", "3.12", "3.13"]
+      fail-fast: false
 
     steps:
       - uses: actions/checkout@v3
